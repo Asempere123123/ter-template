@@ -1,0 +1,8 @@
+project_name = "{{ project-name }}"
+chip_name = "{{ chip-name }}"
+
+bin_path = "build.bin"
+elf_path = "target/{{ chip-arch }}/debug/project"
+build_command = "cargo objcopy -- -O binary build.bin"
+
+{{ extra-args | replace: "\\n", "\n" }}

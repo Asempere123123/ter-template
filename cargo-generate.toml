@@ -1,0 +1,11 @@
+[placeholders]
+project-name = { prompt = "Enter project name", default = "0", type = "string" }
+flash-begin = { prompt = "Enter flash begin", default = "0", type = "string" }
+flash-len = { prompt = "Enter flash len", default = "0", type = "string" }
+ram-len = { prompt = "Enter ram len", default = "0", type = "string" }
+chip-name = { prompt = "Enter chip name", default = "0", type = "string" }
+chip-arch = { prompt = "Enter chip arch", default = "0", type = "string" }
+extra-args = { prompt = "Enter extra-args", default = "0", type = "string" }
+
+[template]
+exclude = ["Cargo.lock", "target"]

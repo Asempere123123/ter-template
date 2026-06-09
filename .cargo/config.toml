@@ -1,0 +1,12 @@
+[target.{{ chip-arch }}]
+runner = "ter run --defmt"
+
+[build]
+target = "{{ chip-arch }}"
+
+[env]
+DEFMT_LOG = "trace"
+
+[unstable]
+build-std = ["core"]
+build-std-features = ["panic_immediate_abort"]
