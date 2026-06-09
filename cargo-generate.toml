@@ -5,7 +5,7 @@ flash-len = { prompt = "Enter flash len", default = "0", type = "string" }
 ram-len = { prompt = "Enter ram len", default = "0", type = "string" }
 chip-name = { prompt = "Enter chip name", default = "0", type = "string" }
 chip-arch = { prompt = "Enter chip arch", default = "0", type = "string" }
-extra-args = { prompt = "Enter extra-args", default = "0", type = "string" }
+extra-args = { prompt = "Enter extra-args", default = "0", type = "text" }
 
 [template]
 exclude = ["Cargo.lock", "target"]
