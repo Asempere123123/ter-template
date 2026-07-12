@@ -24,16 +24,16 @@ test = false
 bench = false
 
 [profile.dev]
-debug = true
-lto = true
+debug = 2
+lto = "thin"
 opt-level = "z"
 incremental = true
 
 [profile.release]
-debug = false
-lto = true
 opt-level = "z"
-incremental = true
+lto = "fat"
+codegen-units = 1
+debug = 2
 
 [features]
 defmt = ["dep:defmt"]
